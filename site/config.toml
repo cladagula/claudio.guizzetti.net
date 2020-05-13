@@ -1,9 +1,103 @@
-baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "My new Victor-Hugo site"
+baseURL = "https://claudio.guizzetti.net"
+title = "Claudio Guizzetti"
+languageCode = "en"
+DefaultContentLanguage = "en" # Change this to change the site's language
+theme = "hugo.386"
+preserveTaxonomyNames = true
+enableEmoji = true
 
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+[params]
+    # The name to display as main title in the home page
+    mainpagetitle = "My CV"
+
+    # The subtitle to display under the title in the home page
+    mainpagesubtitle = "Hello! I’m Claudio. A Systems Engineer, Integrator & Developer Making the Internet of Things. I’ve Been an IT Consultant for over 13 Years" 
+
+    # The description of your website. It will be displayed in the home page
+    mainpagedesc = "I love technology and what I do, I work every day for the Internet of things, I believe in the Internet of value. Entrepreneurs at heart, Workaholic, Self-starter, Resourceful, Enthusiastic, Innovative. always hungry, always foolish."
+
+    # The name to display in the copyright section in the footer
+    copyrightname = "Claudio Guizzetti"
+
+    # The url to use as link in the copyright name in the footer. Leave empty to use none.
+    copyrighturl = "https://claudio.guizzetti.co"
+
+    # Show the "built on Hugo" disclaimer
+    # showhugo = false
+
+    # Urls for social networks
+    linkedin = "https://www.linkedin.com/in/cladagula"
+    github = "https://github.com/cladagula"
+
+    # Enables or disables the loading animations. false activates them. Default is false.
+    loadfastload = false
+
+    # Sets the speed for the page loading effect. Default is 1.0.
+    loadspeedfactor = 3.0
+
+    # Enables or disables the second flyby cursor. Default is false.
+    loadonepass = false
+
+
+[menu]
+  # This displays buttons in the navbar to access your contents
+  [[menu.main]]
+    identifier = "knowledge" # An unique identifier for the button
+    name = "Knowledge"       # A display name for the button
+    url = "/knowledge/"      # The path to the content. It can lead to a single page (like here)
+    weight = 1          # A number to order the buttons in the navbar
+
+  [[menu.main]]
+    identifier = "aptnesses"
+    name = "Aptnesses"
+    url = "/aptnesses/"       # The path can lead to a content folder too.
+    weight = 2
+
+  [[menu.main]]
+    identifier = "experience"
+    name = "Experience"
+    url = "/experience/"       # The path can lead to a content folder too.
+    weight = 3
+
+ [[menu.main]]
+    identifier = "certifications"
+    name = "Certifications"
+    url = "/certifications/"       # The path can lead to a content folder too.
+    weight = 4
+
+[[menu.main]]
+    identifier = "courses"
+    name = "Courses"
+    url = "/courses/"       # The path can lead to a content folder too.
+    weight = 5
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
